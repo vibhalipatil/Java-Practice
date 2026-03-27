@@ -7,7 +7,7 @@ public class LoginValidator {
 	     String password = "Test@123";
 	     int loginAttempts = 2;
 
-	        // Conditions
+	        // Applying Conditions
 	        boolean isUsernameValid = username != null && !username.isEmpty();
 	        boolean isPasswordValid = password.length() >= 8;
 	        boolean isAttemptsAllowed = loginAttempts < 3;
@@ -15,7 +15,7 @@ public class LoginValidator {
 	        // Final Expression using Logical Operators
 	        boolean canLogin = isUsernameValid && isPasswordValid && isAttemptsAllowed;
 
-	        // Output
+	        //Printing Output
 	        System.out.println("Username Valid: " + isUsernameValid);
 	        System.out.println("Password Valid: " + isPasswordValid);
 	        System.out.println("Attempts Allowed: " + isAttemptsAllowed);
@@ -25,6 +25,4 @@ public class LoginValidator {
 	        loginAttempts++;
 	        System.out.println("Updated Attempts: " + loginAttempts);
 	    }
-
-
 	}
