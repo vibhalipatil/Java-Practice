@@ -15,11 +15,22 @@ public class LoginValidator {
 	        // Final Expression using Logical Operators
 	        boolean canLogin = isUsernameValid && isPasswordValid && isAttemptsAllowed;
 
-	        //Printing Output
-	        System.out.println("Username Valid: " + isUsernameValid);
-	        System.out.println("Password Valid: " + isPasswordValid);
-	        System.out.println("Attempts Allowed: " + isAttemptsAllowed);
-	        System.out.println("User Can Login: " + canLogin);
+	        // Decision Making using if-else
+	        if (canLogin) {
+	            System.out.println("Login Successful ✅");
+	        } else {
+	            System.out.println("Login Failed ❌");
+
+	            if (!isUsernameValid) {
+	                System.out.println("Reason: Invalid Username");
+	            }
+	            if (!isPasswordValid) {
+	                System.out.println("Reason: Weak Password");
+	            }
+	            if (!isAttemptsAllowed) {
+	                System.out.println("Reason: Max login attempts exceeded");
+	            }
+	        }
 
 	        // Increment attempt
 	        loginAttempts++;
