@@ -5,7 +5,7 @@ public class LoginValidator {
 	public static void main(String[] args) {
 		 String username = "testUser";
 	     String password = "Test@123";
-	     int loginAttempts = 2;
+	     int loginAttempts = 4;
 
 	        // Applying Conditions
 	        boolean isUsernameValid = username != null && !username.isEmpty();
@@ -17,7 +17,7 @@ public class LoginValidator {
 
 	        // Decision Making using if-else
 	        if (canLogin) {
-	            System.out.println("Login Successful ✅");
+	            System.out.println("Login Successful");
 	        } else {
 	            System.out.println("Login Failed ❌");
 
