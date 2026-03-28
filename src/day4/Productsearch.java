@@ -22,7 +22,7 @@ public class Productsearch {
 	        if (productfound) {
 	            System.out.println("Product Found ");
 	        } else {
-	            System.out.println("Product Not Found ❌");
+	            System.out.println("Product Not Found ");
 	        }
 	   }
 	}
