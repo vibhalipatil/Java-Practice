@@ -6,7 +6,7 @@ public class assigningfunctionlity {
 	String button = "submit";
 	
 	assigningfunctionlity(){
-		System.out.println("Web page open by creating Constructor");
+		System.out.println("Weg page open by creating conct");
 	}
 	
 	void enterusername(String username) {
